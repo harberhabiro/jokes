@@ -1,0 +1,184 @@
+.banner {
+    background-image: linear-gradient(45deg, grey, green);
+    padding: 22px 60px 0 50px;
+    border-radius: 12px;
+    /* display: flex;
+    align-items: center; */
+    min-height: 160px;
+    margin-bottom: 1rem;
+}
+
+.banner h1 {
+    font-size: 2.25rem;
+}
+
+.parts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parts form {
+    flex: 60%;
+    height: 100%;
+    background-color: #1d2333;
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.06);
+    padding: 32px 28px;
+}
+
+.parts form input {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 48px;
+    padding: 0 18px;
+    font-size: .875rem;
+    background-color: #1d2333;
+    border: 1px solid #3f485f;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.parts form input:focus {
+    outline: 1px solid red;
+}
+
+.parts form input[type="submit"] {
+    background-color: #40d04f;
+    cursor: pointer;
+    box-shadow: 4px 7px 12px 0 rgb(64 208 79 / 20%);
+}
+
+.parts .formData {
+    position: relative;
+}
+
+/* .parts .formData input {
+    position: relative;
+} */
+
+.parts .formData button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+    height: 48px;
+    color: #9b7dff;
+    background-color: #1d2333;
+    border: 1px solid #3f485f;
+    border-left: none;
+    border-radius: 0 12px 12px 0;
+    opacity: .6;
+    font-size: 20px;
+}
+
+.parts .rules {
+    flex: 30%;
+    padding: 12px 28px;
+    border-radius: 12px;
+    background-color: #1d2333;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 6%);
+    margin-left: 16px;
+}
+
+.rules p:first-child {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.rules .ruleInfo {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.7142857143em;
+    margin-top: 36px;
+}
+
+.parts .rules ol {
+    margin-top: 18px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.parts .rules ol li {
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.parts .rules .listNumber {
+    width: 28px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.7142857143em;
+}
+
+.parts .rules .listText {
+    font-size: .875rem;
+    line-height: 1.7142857143em;
+    font-weight: 500;
+}
+
+/* terms and conditions for register */
+.terms {
+    margin-bottom: 30px;
+    margin-top: -4px;
+}
+
+.terms p:first-child {
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.terms p:last-child {
+    margin-top: 4px;
+    color: #8f91ac;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.4285714286em;
+}
+
+/* Links for login */
+.loginLinks {
+    display: flex;
+    margin-top: 1rem!important;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.loginLink {
+    color: #00c7d9 !important;
+    line-height: 1em;
+}
+
+.loginButton {
+    margin-bottom: 0!important;
+}
+
+
+@media screen and (max-width: 960px) {
+    .banner {
+        height: 86px;
+        min-height: auto;
+        padding: 12px 24px;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+        line-height: 1em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .parts form, .parts .rules {
+        flex: 100%;
+    }
+
+    .parts .rules {
+        margin-left: 0!important;
+        margin-top: 16px;
+    }
+}
